@@ -11,3 +11,10 @@ const onProgress = (event) => {
     }
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const arButton = document.getElementById('ar-button');
+    arButton.addEventListener('click', () => {
+        alert(window.location.href);
+    });
+});
